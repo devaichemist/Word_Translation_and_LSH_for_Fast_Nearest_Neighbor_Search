@@ -20,7 +20,7 @@ In this Jupyter Notebook, we build a simple machine translation model using word
     Implement a loss function based on the Frobenius norm, compute its gradient with respect to W, and optimize it using gradient descent to learn the best transformation.
 7. ### Translate words using nearest neighbors 
     Multiply English embeddings by the learned matrix W and find the most similar French vectors using cosine similarity (exact k-nearest neighbors).
-8. ### Identify the efficiency problem 
+8. ### Identify the efficiency problem
         Exact nearest neighbor search requires comparing each translated vector with every French embedding — a process that becomes very slow for large vocabularies. To make it faster, we introduce Locality-Sensitive Hashing (LSH), which uses random hyperplanes to split the vector space and group similar embeddings into the same hash buckets for quicker lookup.
 
 <img width="1076" height="508" alt="Screenshot 2025-11-03 at 08 35 02" src="https://github.com/user-attachments/assets/e4cc37e5-7c88-44cd-8eee-381b130262ad" />
